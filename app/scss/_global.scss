@@ -1,9 +1,12 @@
 body {
-  min-height: 100vh;
-  // font-family: 'Roboto Condensed', sans-serif;
-  // font-style: normal;
-  // font-weight: 300;
-  // font-size: 14px;
-  // color: #242121;
-  // background-color: #ffffff;
+  font-size: 16px;
+  line-height: 26px;
+  color: $default;
+  @extend %quicksand-500;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
