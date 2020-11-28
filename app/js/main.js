@@ -6,4 +6,11 @@ $(function () {
     autoplay: true,
     autoplaySpeed: 3000,
   });
+
+  $('.star').rateYo({
+    starWidth: '17px',
+    normalFill: '#ccccce',
+    rateFill: '#ffc35b',
+    readOnly: true,
+  });
 });
