@@ -9,6 +9,7 @@
   "author": "Tao",
   "license": "ISC",
   "devDependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.13",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
@@ -17,7 +18,9 @@
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
-    "jquery": "^3.5.1"
+    "jquery": "^3.5.1",
+    "rateyo": "^2.3.2",
+    "slick-carousel": "^1.8.1"
   },
   "dependencies": {}
 }
