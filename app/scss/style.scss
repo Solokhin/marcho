@@ -482,11 +482,110 @@
 
 .product-item {
   max-width: 370px;
+  text-align: center;
+
+  &.product-item--list {
+    min-width: 100%;
+    display: flex;
+    text-align: left;
+
+    &:hover {
+      .product-item__link-box {
+        transform: translateY(-200%);
+      }
+    }
+
+    .product-item__img-box {
+      min-width: 200px;
+      height: 250px;
+      margin-bottom: 0;
+
+      img {
+        height: 250px;
+      }
+    }
+
+    .product-item__text {
+      margin-bottom: 25px;
+      max-height: 50px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .product-item__btn {
+      color: #fff;
+      padding: 15px 40px;
+      background-color: $title;
+      border: none;
+      cursor: pointer;
+
+      &:hover {
+        background-color: $accent;
+        box-shadow: 0px 7px 20px 0px rgba(255, 17, 48, 0.3);
+      }
+    }
+
+    .product-item__link-box {
+      background-color: transparent;
+      width: 115px;
+      box-shadow: none;
+      bottom: 0;
+
+      .product-item__link {
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .product-item__link--line {
+        display: none;
+      }
+    }
+
+    .product-item__content-box {
+      display: block;
+    }
+
+    .product-item__wrapper-box {
+      padding: 24px 40px;
+      border: 1px solid #ececec;
+      border-left: none;
+    }
+
+    .product-item__box {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .product-item__title {
+      order: -1;
+      width: 100%;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    .product-item__price {
+      order: -1;
+      margin-left: -12px;
+    }
+
+    .star {
+      margin-left: 23px;
+    }
+  }
 
   &:hover {
     .product-item__link-box {
       transform: translateY(0);
     }
+  }
+
+  &__content-box {
+    display: none;
   }
 
   &__img-box {
@@ -689,7 +788,7 @@
 
     &:hover {
       box-shadow: 20px 0px 60px 0px rgba(202, 202, 202, 0.35);
-      border: none;
+      border: 1px solid #fff;
 
       .blog__item-link {
         color: $accent;
